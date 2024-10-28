@@ -2,6 +2,8 @@ package BasicMathProblems;
 
 public class CountDigits {
 
+    // Link : https://www.geeksforgeeks.org/problems/count-digits5716/1
+
     public static void main(String[] args) {
 
         int ans = evenlyDividesInt(45);
@@ -40,6 +42,7 @@ public class CountDigits {
         for(int i = 0; i<str.length(); i++){
             char myvar = str.charAt(i);
 
+            //clarification
             //char myvar = '7';
             //int myint = myvar - '0'; // Result: 7 (ASCII value of '7' is 55, '0' is 48, so 55 - 48 = 7)
 
