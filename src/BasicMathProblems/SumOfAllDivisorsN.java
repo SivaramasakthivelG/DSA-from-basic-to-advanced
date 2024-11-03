@@ -2,7 +2,7 @@ package BasicMathProblems;
 
 public class SumOfAllDivisorsN {
 
-
+    //Problem link: https://www.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n4738/1
     public static void main(String[] args) {
 
         int floor = (int) sumOfDivisors(5);

@@ -2,6 +2,7 @@ package BasicMathProblems;
 
 public class GCD_LCM {
 
+    //gfg link : https://www.geeksforgeeks.org/problems/lcm-and-gcd4516/1
 
     public static void main(String[] args) {
 
