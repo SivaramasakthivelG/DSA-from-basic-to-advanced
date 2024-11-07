@@ -3,6 +3,7 @@ package BasicMathProblems;
 public class SumOfAllDivisorsN {
 
     //Problem link: https://www.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n4738/1
+
     public static void main(String[] args) {
 
         int floor = (int) sumOfDivisors(5);
@@ -58,8 +59,8 @@ public class SumOfAllDivisorsN {
         return ans;
     }
 
-    //using recursion
-
+    //using recursion, this call is same as factorial recursion
+    // Logic :  calculate the factor of 1 first, then up to n
     public static long countSum(int n,int i) {
         if (i > n) {
             return 0;

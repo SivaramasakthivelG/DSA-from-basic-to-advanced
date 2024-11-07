@@ -2,15 +2,12 @@ package BasicMathProblems;
 
 public class Fibo {
 
+    // problem link : https://leetcode.com/problems/fibonacci-number/description/
     public static void main(String[] args) {
-
 
         int sums = fib(4);
 
         System.out.println(sums);
-
-
-
     }
 
     // it takes 8 ms, but conventional math method did it in 0ms
