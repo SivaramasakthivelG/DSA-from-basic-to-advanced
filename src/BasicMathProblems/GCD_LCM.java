@@ -9,10 +9,8 @@ public class GCD_LCM {
 
         Long floor[] = lcmAndGcd(6L, 10L);
 
-
-
-        System.out.println(floor[0]);
-        System.out.println(floor[1]);
+        System.out.println(floor[0]); // gcd
+        System.out.println(floor[1]); // lcm
 
 
     }
@@ -20,12 +18,9 @@ public class GCD_LCM {
 
     static Long[] lcmAndGcd(Long A , Long B) {
 
-        //we have to find the biggest number between two
-        // we have to perfrom euclidean algo
-
+        //euclidean algo
 
         long ans = 0;
-
         long big = A;
         long small = B;
 
@@ -33,17 +28,12 @@ public class GCD_LCM {
             big = B;
             small = A;
         }
-
         while(big % small != 0){
             Long temv = big;
             big = small;
             small = temv - small ;
         }
         ans = small;
-
-//        if(big%small == 0){
-//            ans = big/small;
-//        }
 
         Long arr[] = new Long[2];
         arr[0] = ans;
@@ -53,8 +43,9 @@ public class GCD_LCM {
         arr[1] = lcm;
 
         return arr;
-
     }
+
+    // Do recursion for GCD
 
 
 
