@@ -12,6 +12,8 @@ public class GCD_LCM {
         System.out.println(floor[0]); // gcd
         System.out.println(floor[1]); // lcm
 
+        System.out.println(gcd(66L,12L));
+
 
     }
 
@@ -46,7 +48,15 @@ public class GCD_LCM {
     }
 
     // Do recursion for GCD
+    static int gcd(long a,long b){
 
+        if(a%b == 0){
+            return (int) b;
+        }
+
+        return gcd(b,a%b);
+        // a%b handles if the second element is bigger and also the else
+    }
 
 
 }
