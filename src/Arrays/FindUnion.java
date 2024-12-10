@@ -44,7 +44,7 @@ public class FindUnion {
 
     }
 
-    //Manual method
+    //This pattern Used in Merge sort
     // Function to return a list containing the union of the two arrays.
     public static ArrayList<Integer> findUnionManual(int arr1[], int arr2[], int n, int m) {
         int i = 0, j = 0;
