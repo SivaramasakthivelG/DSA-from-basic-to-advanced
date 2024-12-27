@@ -6,10 +6,10 @@ public class RecursionExample {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 8, 7, 8};
+        int[] arr = {1, 7, 8, 7, 8};
 
 
-        for (int i : findAllIndex11(arr,8,0)) {
+        for (int i : findAllIndex11(arr, 8, 0)) {
             System.out.println(i);
         }
     }

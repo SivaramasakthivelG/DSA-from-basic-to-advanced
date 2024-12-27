@@ -1,17 +1,16 @@
 package Strings;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ReverseEachWord {
 
+    // L557: https://leetcode.com/problems/reverse-words-in-a-string-iii/
     public static void main(String[] args) {
 
         String sr = "Android is interesting";
 
-        reverseWord(sr);
+//        reverseWord(sr);
+        reverseWordStack(sr);
     }
 
     private static void reverseWord(String sr) {
@@ -22,8 +21,8 @@ public class ReverseEachWord {
         String temp = "";
 
        for(String word : words){
-           for(int i=word.length()-1;i>=0;i--){
-               temp += word.charAt(i);
+           for(int i=0;i<word.length();i++){
+               temp = word.charAt(i) + temp;
            }
            wordList.add(temp);
            temp = " ";
@@ -38,6 +37,31 @@ public class ReverseEachWord {
             sr += s;
         }
         System.out.print(sr);
+    }
+
+    private static void reverseWordStack(String sr) {
+        StringBuilder s = new StringBuilder(sr);
+        s.reverse();
+        String[] words = s.toString().split(" ");
+
+        Stack<String> wordStack = new Stack<>();
+
+        // add each word to the stack
+        // pop one by one till end
+
+        for (String i: words){
+            wordStack.push(i);
+        }
+
+        int i = 0;
+        while (!wordStack.isEmpty()){
+            words[i] = wordStack.pop();
+            i++;
+        }
+
+        for (String ss : words) {
+            System.out.print(ss+" ");
+        }
     }
 
 

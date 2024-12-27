@@ -5,6 +5,8 @@ import java.util.List;
 
 public class AdjacencyList {
 
+    // https://www.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1?utm_source=youtube&utm_
+    // medium=collab_striver_ytdescription&utm_campaign=print-adjacency-list
     public static void main(String[] args) {
 
         int[][] arr = {
@@ -17,7 +19,7 @@ public class AdjacencyList {
                 {3, 2}
         };
 
-        List<List<Integer>> ms = printGraph(5,arr);
+        List<List<Integer>> ms = printGraph(5, arr);
 
         System.out.println(ms);
     }
@@ -25,7 +27,7 @@ public class AdjacencyList {
     public static List<List<Integer>> printGraph(int V, int[][] edges) {
         List<List<Integer>> ls = new ArrayList<>();
 
-        for(int i=0;i<V;i++){
+        for (int i = 0; i < V; i++) {
             ls.add(new ArrayList<>());
         }
 
